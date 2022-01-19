@@ -9,8 +9,24 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
-  <h2>회원 관리</h2>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+<style type ="text/css">
+		
+
+      tr, div {
+	font-family: 'Dongle', sans-serif;
+     font-size : 25px;
+       }
+	h1 {
+	font-family: 'Dongle', sans-serif;
+	 font-size : 40px;
+	}
+
+</style>
+  <body style = "background-image: url(./2.jpg);">
+  <h1>회원 관리</h1>
   
 
     <img src="./jang.jpg" alt="" class="rounded mx-auto d-block" align ="center"> 
@@ -89,31 +105,55 @@
             <tr>
             <th>이메일 수신동의</th>
             <td><div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" disabled checked>
   <label class="form-check-label" for="flexSwitchCheckDefault"></label>
 </div></td>
             <th>결혼유무</th>
             <td><div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" disabled checked>
   <label class="form-check-label" for="flexSwitchCheckDefault"></label>
 </div></td>
+          </tr>
+            <tr>
+            <th>비밀번호 문제</th>
+            <td>가장소중한보물은?</td>
+            <th>홈페이지</th>
+            <td>www.Apeach.com</td>
+          </tr>
+            <tr>
+            <th>비밀번호 문제답</th>
+            <td>가족</td>
+            <th>sns</th>
+            <td><img src="./face.png"> facebook</td>
           </tr>
       </tbody>
   </table>
   
   <table class="table table-dark table-striped">
       <tbody>
-          <tr>
-            <th>자기소개</th>
-            <th colspan = "3">안녕하세요</th>
-      <!--       <th>생년월일</th>
-            <td>970513</td> -->
-          </tr>
+       	<tr> 
+		<th width="100px"  >프로젝트 참여 번호</th>
+		<th width="100px" >프로젝트명</th>
+		<th width="100px" >참여기간</th>
+		<th width="100px" >역할</th>
+		<th width="100px" >발주사</th>
+	</tr>
+	
+	
+	<tr> 
+			<th width="100px"   height = "200px">1 </th>
+		<th>졸업프로젝트 </th>
+		<th ><input type="datetime-local" id="" name="" min = "2022-01-01"><br><input type="datetime-local" id="" name="" min = "2022-01-01"> </th>
+		<th> 총괄 </th>
+		<th> </th>
+		
+		
+	</tr>
           
    </tbody>
    </table>
 <div class="d-grid gap-2 d-md-block">
-  <button class="btn btn-secondary" type="button">목록</button>
+  <button class="btn btn-secondary" type="button" >목록</button>
   <button class="btn btn-primary" type="button">수정</button>
     <button class="btn btn-danger" type="button">삭제</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">진짜삭제
